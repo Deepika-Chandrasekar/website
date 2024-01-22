@@ -7,22 +7,23 @@ body {
   min-height: 95vh;
 }
 .main {
-  /*display: inline-block;*/
+  /*display:   inline-block;*/
   flex: 2;
 }
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
 .card{
-  display: inline-block;
+  width: 45%;
 }
-.left img {
+.left {
   float: left;
-  width: 100px;
-  height: 100px;
 }
-.right img{
-  float: left;
-  width: 100px;
-  height: 100px;
-}
+.right {
+  float: right;
+  }
 
 h1 {
   font-size: 5rem;
@@ -32,4 +33,27 @@ footer {
   text-align: right;
   color: midnightblue;
 }
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
 
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
